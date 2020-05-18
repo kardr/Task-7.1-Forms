@@ -16,5 +16,16 @@ namespace Task_7._1_Forms
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string s = Convert.ToString(textBox1.Text);
+            var set = new HashSet<char>();
+            foreach (var chr in s)
+            {
+                set.Add(chr);
+            }
+            textBox2.Text += set.Count;
+        }
     }
 }
